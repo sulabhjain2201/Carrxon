@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:background="@drawable/bg" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar" >
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="INFORMATION VERIFICATION"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#dedede"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_layout"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/container_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <EditText
+                android:id="@+id/first_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_box"
+                android:hint="First Name"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/last_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/first_name"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_box"
+                android:hint="Last Name"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/last_name"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_box"
+                android:hint="Address"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/apt_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_box"
+                android:hint="Apt No"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/city_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_box"
+                android:hint="City"
+                android:paddingLeft="5dp" />
+ <EditText
+                android:id="@+id/etState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/city_name"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_box"
+                android:hint="State"
+                android:paddingLeft="5dp" />
+            
+           
+
+            <EditText
+                android:id="@+id/zip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etState"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_box"
+                android:hint="Zip"
+                android:inputType="number"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/home_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zip"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_box"
+                android:hint="Home Phone"
+                android:inputType="number"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/work_cellphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_phone"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_box"
+                android:hint="Work/Cell Phone"
+                android:inputType="number"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/preferred_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/work_cellphone"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_box"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="5dp" />
+
+        
+            <Button
+                android:id="@+id/next_step_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/preferred_mail"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_one"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Next Step"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

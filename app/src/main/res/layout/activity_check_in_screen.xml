@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    >
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar">
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:textColor="#dedede"
+            android:text="CHECK-IN "/>
+        </RelativeLayout>
+
+      <Button
+            android:id="@+id/checkin_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_one"
+          android:layout_centerInParent="true"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Check-In Now!"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            />
+
+</RelativeLayout>

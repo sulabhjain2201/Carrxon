@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/friendsPan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/ivfriendsImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_launcher" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/ivfriendsImage" >
+
+            <TextView
+                android:id="@+id/tvFriendsMsgs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/userfriendmessages_textview"
+                android:padding="8dp"
+                android:text="Hello"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tvFrndStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvFriendsMsgs"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Offline" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/MyPan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right" >
+
+        <ImageView
+            android:id="@+id/ivMyImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_launcher" />
+
+        <RelativeLayout
+            android:id="@+id/MyMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/ivMyImage" >
+
+            <TextView
+                android:id="@+id/tvMyMsgs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/usermessages_textview"
+                android:padding="8dp"
+                android:text="Hello"
+                android:layout_margin="8dp"
+                android:textColor="@android:color/black" />
+
+           
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

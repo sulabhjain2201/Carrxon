@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NcrCarrxon-Dialysis</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_home_screen">HomeScreen</string>
+    <string name="title_activity_home__physician">Home_Physician</string>
+    <string name="title_activity_login_screen">LoginScreen</string>
+    <string name="title_activity_register_screen">RegisterScreen</string>
+    <string name="title_activity_register_screen2">RegisterScreen2</string>
+    <string name="title_activity_hospital_list">HospitalList</string>
+    <string name="title_activity_check_in_screen">CheckInScreen</string>
+    <string name="title_activity_hospital_description">HospitalDescription</string>
+    <string name="title_activity_hospitals_map">HospitalsMap</string>
+    <string name="title_activity_check_in_options">CheckInOptions</string>
+    <string name="title_activity_info_verification">InfoVerification</string>
+    <string name="title_activity_select_patient">SelectPatient</string>
+    <string name="title_activity_patient_info">PatientInfo</string>
+    <string name="title_activity_patient_info2">PatientInfo2</string>
+    <string name="title_activity_hospitals_map1">HospitalsMap1</string>
+    <string name="title_activity_symptom_screen">SymptomScreen</string>
+    <string name="title_activity_home_screen_with_login">HomeScreenWithLogin</string>
+    <string name="title_activity_insured_person_info">InsuredPersonInfo</string>
+    <string name="title_activity_insurance_info">InsuranceInfo</string>
+    <string name="title_activity_contact_info">ContactInfo</string>
+    <string name="title_activity_work_injury">WorkInjury</string>
+    <string name="title_activity_previous_visit_screen">PreviousVisitScreen</string>
+    <string name="title_activity_facility_list">FacilityList</string>
+    <string name="title_activity_physician_list">PhysicianList</string>
+    <string name="title_activity_hospital_registration">HospitalRegistration</string>
+    <string name="title_activity_add_doctor">AddDoctor</string>
+    <string name="title_activity_physician_detail">PhysicianDetail</string>
+    <string name="title_activity_hospital_registration2">HospitalRegistration2</string>
+    <string name="title_activity_add_clinic_shedule">AddClinicShedule</string>
+    <string name="title_activity_physicain_detail">PhysicainDetail</string>
+    <string name="title_activity_get_doctor_list">GetDoctorLIst</string>
+    <string name="title_activity_hospital_home_screen">HospitalHomeScreen</string>
+    <string name="title_activity_list_business_persons">ListBusinessPersons</string>
+    <string name="title_activity_display_doctor_info">DisplayDoctorInfo</string>
+    <string name="title_activity_available_appointments">AvailableAppointments</string>
+
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">From GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_message">From GCM: you got message!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">From Demo Server: successfully added device!</string>
+    <string name="server_unregistered">From Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="title_activity_recent_office_chat">RecentOfficeChat</string>
+    <string name="title_activity_recent_office_patients_for_appointment">
+        RecentOfficePatientsForAppointment
+    </string>
+
+    <string name="facility_name">NearBy Dialysis</string>
+    <string name="map_name">Dialysis</string>
+    <string name="speciality_id">64</string>
+    <string name="package_name">in.globalsoft.carrxondialysis</string>
+    <string name="copay_saving_button">Copay Saving Cards</string>
+    <string name="net_not_available">Internet is not available</string>
+    <string name="share_text">Join urncr.com so you can help more patients.</string>
+    <string name="share_text_doctor">Join urncr.com so you can help more patients.</string>
+    <string name="share_text_patient">Join urncr.com to get access to Doctor same day.</string>
+    <string name="share_text_health_care">Join urncr.com so you can help more patients.</string>
+    <string name="upload_doc">Upload Documents</string>
+    <string name="saved_doc">Saved Documents</string>
+    <string name="saved_document">Saved Documents</string>
+    <string name="hint_title">Title Please</string>
+    <string name="hint_desc">Descrition Please</string>
+    <string name="category_title">Select Catogery</string>
+    <string name="detail">Document Details</string>
+    <string name="fetching_countries">Fetching Countries</string>
+    <string name="fetching_states">Fetching States</string>
+    <string name="fetching_cities">Fetching Cities</string>
+    <string name="defaultProgressMsg">Loading...</string>
+    <string name="provider_resisteration">Provider Registration</string>
+    <string name="patient_resisteration">Patient Registration</string>
+    <string name="login">Login</string>
+    <string name="find_nearby">Find NearBy Facility</string>
+    <string name="market">Market Place</string>
+    <string name="PERMISSION_DENIED">Permission Denied</string>
+    <string name="IMAGE_CAPTURE_PERMISSION_DENIED">Image Caputre Permission Denied</string>
+    <string name="GET_IMAGE_FROM_GALLERY_PERMISSION_DENIED">Get Image From Gallery Permission Denied</string>
+
+
+</resources>

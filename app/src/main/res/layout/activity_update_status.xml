@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+      android:background="@drawable/bg">
+       <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar" >
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="UPDATE STATUS"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#dedede"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+         <RelativeLayout
+                android:id="@+id/status_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+              
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/drop_down_menu_bg" >
+
+                <ImageView
+                    android:id="@+id/status_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/drop_down_menu_arrow" />
+
+                <TextView
+                    android:id="@+id/status_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="Status"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#606060"
+                    />
+            </RelativeLayout>
+            
+           <RelativeLayout
+                android:id="@+id/waitingTimeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/status_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/drop_down_menu_bg" >
+
+                <ImageView
+                    android:id="@+id/waitingTime_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/calender_icon" />
+
+                <TextView
+                    android:id="@+id/waitingTime_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="Waiting Time"
+                    android:textColor="#606060"
+                     android:textAppearance="?android:attr/textAppearanceMedium"
+                     />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/nextAppointmentTimeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/waitingTimeLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:background="@drawable/drop_down_menu_bg" >
+
+                <ImageView
+                    android:id="@+id/nextAppointmentTime_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/calender_icon" />
+
+                <TextView
+                    android:id="@+id/nextAppointmentTime_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="Next Appointment Time"
+                    android:textColor="#606060"
+                     android:textAppearance="?android:attr/textAppearanceMedium"
+                    />
+            </RelativeLayout>
+               <Button
+            android:id="@+id/update_status_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_one"
+            android:layout_below="@+id/nextAppointmentTimeLayout"
+            android:layout_marginTop="20dp"
+            android:text="Update Status" 
+             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            />
+               
+                   <Button
+            android:id="@+id/skip_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_one"
+            android:layout_below="@+id/update_status_btn"
+            android:layout_marginTop="20dp"
+            android:text="Skip" 
+             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            />
+    </RelativeLayout>
+</RelativeLayout>

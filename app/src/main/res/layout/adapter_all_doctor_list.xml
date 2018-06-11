@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_item" >
+
+    <ImageView
+        android:id="@+id/doctor_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/container_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_toRightOf="@+id/doctor_image" >
+
+        <TextView
+            android:id="@+id/doctor_name"
+            android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+         <TextView
+            android:id="@+id/doctor_speciality"
+            android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/doctor_name"
+        android:layout_marginTop="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

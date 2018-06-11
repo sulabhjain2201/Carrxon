@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar" >
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Recent Chat"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#dedede"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="SEARCH BY HOSPITAL NAME"
+        android:maxLines="1"
+        android:padding="5dp" />
+
+    <ListView
+        android:id="@+id/lvRecentChatList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+    </ListView>
+
+    <ListView
+        android:id="@+id/lvSearchDoctorList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/tvNoChat"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="NO CHAT FOUND"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center" />
+
+</LinearLayout>

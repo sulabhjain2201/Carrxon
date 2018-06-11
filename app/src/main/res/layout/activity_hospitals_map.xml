@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+   <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar">
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="NEARBY HOSPITALS"
+            android:textStyle="bold"
+            android:textColor="#dedede"
+         />
+        <Button
+    android:id="@+id/switch_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:text="LIST"
+    android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+  <fragment 
+		android:id="@+id/map"
+		
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/title_layout"
+		class="com.google.android.gms.maps.SupportMapFragment" />	
+
+</RelativeLayout>

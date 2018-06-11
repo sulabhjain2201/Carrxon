@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+   >
+   <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar">
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="NEARBY HOSPITALS"
+            android:textStyle="bold"
+            android:textColor="#dedede"
+         />
+        <Button
+    android:id="@+id/switch_btn"
+    android:layout_width="24dp"
+    android:layout_height="24dp"
+    android:layout_marginRight="10dp"
+    android:layout_centerVertical="true"
+   android:background="@drawable/list_icon"
+    android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+  <fragment 
+		android:id="@+id/map"
+		
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/title_layout"
+		class="com.google.android.gms.maps.SupportMapFragment" />
+
+  <LinearLayout
+      android:id="@+id/llBottom"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentLeft="true"
+      android:background="#BBFFFFFF"
+      android:orientation="vertical"
+      android:visibility="gone" >
+
+      <TextView
+          android:id="@+id/title"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:padding="5dp"
+          android:text="Hello"
+          android:textColor="@android:color/black"
+          android:textSize="14sp" />
+      <TextView
+          android:id="@+id/address"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:paddingLeft="5dp"
+          android:text="Hello"
+          android:textColor="@android:color/black"
+          android:textSize="10sp" />
+      <TextView
+          android:id="@+id/phone"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:paddingLeft="5dp"
+          android:text="Hello"
+          android:textColor="@color/blue"
+          android:textSize="10sp"
+          android:clickable="true" />
+      <TextView
+          android:id="@+id/waitig_time"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:paddingLeft="5dp"
+          android:text="Hello"
+          android:textColor="@android:color/black"
+          android:textSize="10sp" />
+      <TextView
+          android:id="@+id/appointment_time"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:paddingLeft="5dp"
+          android:text="Hello"
+          android:textColor="@android:color/black"
+          android:textSize="10sp" />
+      
+
+      <TextView
+          android:id="@+id/btnTextChat"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginBottom="5dp"
+          android:layout_marginLeft="10dp"
+          android:background="@color/blue"
+          android:gravity="center"
+          android:padding="10dp"
+          android:text="Text Chat"
+          android:textColor="@android:color/white"
+          android:textStyle="bold" />
+  </LinearLayout>
+
+</RelativeLayout>

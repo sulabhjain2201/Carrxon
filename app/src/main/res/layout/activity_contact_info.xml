@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+      android:background="@drawable/bg">
+       <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar">
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="CONTACT INFORMATION"
+            android:textStyle="bold"
+            android:textColor="#dedede"
+         />
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <EditText
+            android:id="@+id/contact_phone_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:background="@drawable/text_box"
+            android:inputType="number"
+            android:hint="Enter your contact phone no" />
+
+        <EditText
+            android:id="@+id/full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contact_phone_no"
+            android:layout_marginTop="10dp"
+             android:paddingLeft="5dp"
+            android:background="@drawable/text_box"
+            android:hint="When we call who should we ask for?" />
+        
+          <EditText
+            android:id="@+id/time_in_mins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/full_name"
+            android:layout_marginTop="10dp"
+             android:paddingLeft="5dp"
+             android:inputType="number"
+            android:background="@drawable/text_box"
+            android:hint="Time required to get to Carrxon(in Mins)" />
+
+      
+        <Button
+            android:id="@+id/complete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_one"
+            android:layout_below="@+id/time_in_mins"
+            android:layout_marginTop="20dp"
+            android:text="Complete"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            />
+      
+    </RelativeLayout>
+</RelativeLayout>

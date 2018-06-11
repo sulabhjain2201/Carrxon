@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+     >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/place_holder"
+        android:id="@+id/doctor_image"
+        android:layout_margin="10dp"
+        />
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/doctor_name"
+        android:layout_toRightOf="@+id/doctor_image"
+       
+        android:textSize="35dp"
+        android:textColor="@android:color/black"
+        android:layout_margin="20dp"
+        />
+     
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/call_icon_blue"
+        android:id="@+id/call_image"
+        android:layout_below="@+id/doctor_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        />
+ 
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/doctor_phone"
+        android:layout_toRightOf="@+id/call_image"
+        android:layout_below="@+id/doctor_name"
+       
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_margin="5dp"
+        />
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/call_icon_blue"
+        android:id="@+id/email_image"
+        android:layout_below="@+id/call_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        />
+    
+     <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/doctor_email"
+        android:layout_toRightOf="@+id/email_image"
+        android:layout_below="@+id/doctor_phone"
+        
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_margin="5dp"
+        />
+     
+      <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/call_icon_blue"
+        android:id="@+id/address_image"
+        android:layout_below="@+id/email_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        />
+      
+       <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/doctor_address"
+        android:layout_toRightOf="@+id/address_image"
+        android:layout_below="@+id/doctor_email"
+        android:text="672-krishnapuri"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_margin="5dp"
+        />
+       
+       <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/office_location_text"
+        android:layout_below="@+id/doctor_address"
+        android:text="Office Locations"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:layout_margin="10dp"
+        />
+       
+      <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/place_holder"
+        android:id="@+id/hospital_image"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/office_location_text"
+        />
+
+      <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hospital_name"
+        android:layout_toRightOf="@+id/hospital_image"
+        android:layout_below="@+id/office_location_text"
+     
+        android:textSize="35dp"
+        android:textColor="@android:color/black"
+        android:layout_margin="20dp"
+        />
+      
+       <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/call_icon_blue"
+        android:id="@+id/hospital_call_image"
+        android:layout_below="@+id/hospital_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        />
+       
+       <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hospital_phone"
+        android:layout_toRightOf="@+id/hospital_call_image"
+        android:layout_below="@+id/hospital_name"
+       
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_margin="5dp"
+        />
+       
+        <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/call_icon_blue"
+        android:id="@+id/hospital_email_image"
+        android:layout_below="@+id/hospital_call_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        />
+    
+     <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hospital_email"
+        android:layout_toRightOf="@+id/hospital_email_image"
+        android:layout_below="@+id/hospital_phone"
+        android:text="gargankit936@gmail.com"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_margin="5dp"
+        />
+     
+      <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/call_icon_blue"
+        android:id="@+id/hospital_address_image"
+        android:layout_below="@+id/hospital_email_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        />
+      
+       <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hospital_address"
+        android:layout_toRightOf="@+id/hospital_address_image"
+        android:layout_below="@+id/hospital_email"
+        android:text="672-krishnapuri"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_margin="5dp"
+        />
+</RelativeLayout>

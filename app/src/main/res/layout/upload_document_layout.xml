@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/category_title"
+        />
+
+     <Spinner
+         android:layout_marginTop="10dp"
+         android:id="@+id/category_sppinner"
+         android:layout_width="match_parent"
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:layout_height="wrap_content"></Spinner>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/input_layout_title"
+        android:layout_width="match_parent"
+        android:text="Title:"
+        android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/input_title"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|top"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_box"
+            android:hint="@string/hint_title" />
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/input_layout_descrition"
+        android:layout_width="match_parent"
+        android:gravity="top|left"
+        android:text="Description:"
+        android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/input_descrition"
+            android:layout_width="match_parent"
+            android:gravity="left|top"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_box"
+            android:layout_height="wrap_content"
+            android:lines="5"
+            android:hint="@string/hint_desc" />
+
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/attached"
+            android:gravity="center"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/attach_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attach a file"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_one"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:onClick="onAttach"
+            android:padding="5dp"
+            />
+
+    </LinearLayout>
+
+       <RelativeLayout
+           android:layout_marginTop="10dp"
+           android:gravity="center"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:background="@drawable/button_one"
+               android:onClick="onPostData"
+               android:text="Upload Document"
+               android:textAppearance="?android:attr/textAppearanceMedium"
+               android:textColor="@android:color/white"></Button>
+
+       </RelativeLayout>
+
+</LinearLayout>

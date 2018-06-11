@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="NCR Carrxon"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#dedede"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/logout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/logout_btn" />
+
+        <ImageView
+            android:id="@+id/invite_btn"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/invite" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/username_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_layout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Welcome Sulabh"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black" />
+
+
+    <RelativeLayout
+        android:id="@+id/center_layout"
+        android:layout_below="@+id/username_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/painMgmtSpecBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_one"
+            android:text="@string/facility_name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+           ></Button>
+
+        <Button
+            android:id="@+id/find_physician"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/painMgmtSpecBtn"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_one"
+            android:text="Find a Doctor"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"></Button>
+
+        <Button
+            android:id="@+id/find_facility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/find_physician"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_one"
+            android:text="Find a Facility"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"></Button>
+
+        <Button
+            android:id="@+id/btnSearchDoctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/find_facility"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_one"
+            android:text="Search a Center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"></Button>
+
+        <Button
+            android:id="@+id/copay_saving_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSearchDoctor"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_one"
+            android:text="@string/copay_saving_button"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"></Button>
+
+        <Button
+            android:id="@+id/btnChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/copay_saving_btn"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_one"
+            android:text="Text Chat"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"></Button>
+
+        <Button
+            android:id="@+id/upload_a_document"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnChat"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_one"
+            android:text="@string/upload_doc"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"></Button>
+
+        <Button
+            android:id="@+id/saved_document"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/upload_a_document"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_one"
+            android:text="@string/saved_doc"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"></Button>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

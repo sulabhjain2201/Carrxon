@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+      android:background="@drawable/bg">
+        <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar">
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:textColor="#dedede"
+            android:text="CHECK-IN OPTIONS"/>
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <Button
+            android:id="@+id/use_insurance_btn"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:text="I'll Use My Insurance"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_one">
+        </Button>
+         <Button
+            android:id="@+id/private_pay_btn"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/use_insurance_btn"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="Private Pay - I'll Pay In Full\n At The Time Of Services"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_one">
+        </Button>
+         <Button
+            android:id="@+id/my_employer_authorised_btn"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/private_pay_btn"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="Work Injury Authorized\n By My Employer"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_one">
+        </Button>
+    </RelativeLayout>
+
+</RelativeLayout>

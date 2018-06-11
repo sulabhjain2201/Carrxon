@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar" >
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="INSURANCE INFO"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#dedede"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_layout"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/container_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <RelativeLayout
+                android:id="@+id/company_name_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/city_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/drop_down_menu_bg"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp" >
+
+                <ImageView
+                    android:id="@+id/company_name_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/drop_down_menu_arrow" />
+
+                <TextView
+                    android:id="@+id/company_name_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Insurance Company"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#606060" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/payor_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/company_name_layout"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_box"
+                android:hint="Payor/TPA"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/claim_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/payor_edit"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_box"
+                android:hint="Claim Address"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/service_phoneno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/claim_address"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_box"
+                android:hint="Service Phone"
+                android:inputType="number"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/membership_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/service_phoneno"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_box"
+                android:hint="Membership ID"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/membership_id"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_box"
+                android:hint="Group Name"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/group_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/group_name"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_box"
+                android:hint="Group Number"
+                android:paddingLeft="5dp" />
+
+            <RelativeLayout
+                android:id="@+id/copy_of_insurance_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/group_no"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/drop_down_menu_bg"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp" >
+
+                <ImageView
+                    android:id="@+id/copy_of_insurance_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/drop_down_menu_arrow" />
+
+                <TextView
+                    android:id="@+id/copy_of_insurance_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Do you have a copy of your insurance?"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#606060" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/insurance_info_next_step_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/copy_of_insurance_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_one"
+                android:text="Next Step"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

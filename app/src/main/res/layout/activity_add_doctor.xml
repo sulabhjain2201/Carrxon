@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+     >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar" >
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="PROVIDER REGISTRATION"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#dedede"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_layout">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/doctor_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/place_holder" />
+
+            <EditText
+                android:id="@+id/doctor_state"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="10dp"
+                android:layout_toLeftOf="@+id/doctor_image"
+                android:background="@drawable/text_box"
+                android:hint="City Name"
+                android:paddingLeft="5dp"
+                android:visibility="gone" />
+
+            <!-- <EditText -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:hint="Phone No" -->
+            <!-- android:id="@+id/doctor_phone" -->
+            <!-- android:background="@drawable/text_box" -->
+            <!-- android:layout_toLeftOf="@+id/doctor_image" -->
+            <!-- android:layout_below="@+id/doctor_name" -->
+            <!-- android:paddingLeft="5dp" -->
+            <!-- android:inputType="number" -->
+            <!-- android:layout_margin="10dp" -->
+            <!-- /> -->
+
+            <RelativeLayout
+                android:id="@+id/doctor_speciality_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/doctor_state"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_toLeftOf="@+id/doctor_image"
+                android:background="@drawable/drop_down_menu_bg"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp" >
+
+                <ImageView
+                    android:id="@+id/doctor_speciality_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/drop_down_menu_arrow" />
+
+                <TextView
+                    android:id="@+id/doctor_speciality_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Specialty"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#606060" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/doctor_address_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/doctor_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/drop_down_menu_bg"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp" >
+
+                <ImageView
+                    android:id="@+id/doctor_address_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/drop_down_menu_arrow" />
+
+                <TextView
+                    android:id="@+id/doctor_arrow_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Address"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#606060" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/doctor_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/doctor_address_layout"
+                android:layout_margin="10dp"
+                android:background="@drawable/text_box"
+                android:gravity="center_vertical"
+                android:hint="Name"
+                android:paddingLeft="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/doctor_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/doctor_name"
+                android:layout_margin="10dp"
+                android:background="@drawable/text_box"
+                android:gravity="center_vertical"
+                android:hint="Phone"
+                android:paddingLeft="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/doctor_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/doctor_phone"
+                android:layout_margin="10dp"
+                android:background="@drawable/text_box"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="5dp"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/add_doctor_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/doctor_email"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_one"
+                android:text="Continue"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

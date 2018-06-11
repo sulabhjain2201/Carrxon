@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+  
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar" >
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="CARRXON"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#dedede"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/lvChat"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.9"
+        android:layout_below="@+id/title_layout"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/llBottom"
+        android:cacheColorHint="#00000000"
+       android:dividerHeight="1px"
+        >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/llBottom"
+        android:layout_alignParentBottom="true"
+        android:weightSum="1" >
+
+        <EditText
+            android:id="@+id/etMsg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:hint="Enter Message.."
+            android:background="@drawable/text_box"
+            android:padding="10dp"
+          />
+
+        <TextView
+            android:id="@+id/tvSend"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:background="#77777777"
+            android:gravity="center"
+            android:text="Send"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+</RelativeLayout>

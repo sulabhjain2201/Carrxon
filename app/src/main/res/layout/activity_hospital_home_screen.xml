@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+      android:background="@drawable/bg"
+  >
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar">
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:textColor="#dedede"
+            android:text="CARRXON"/>
+        <ImageView
+            android:id="@+id/logout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/logout_btn" />
+        </RelativeLayout>
+   <RelativeLayout
+        android:id="@+id/container_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <Button
+            android:id="@+id/btn_adddoctor"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:text="Add a doctor"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_one">
+        </Button>
+         <Button
+            android:id="@+id/btn_doctorList"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/btn_adddoctor"
+            android:text="List of doctors"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_one">
+        </Button>
+         <Button
+            android:id="@+id/btn_updateSchedule"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/btn_doctorList"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Update Schedule"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_one">
+        </Button>
+    </RelativeLayout>
+
+   
+</RelativeLayout>

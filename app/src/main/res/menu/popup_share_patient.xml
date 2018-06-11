@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/doctor_share"
+        android:title="Invite Doctors"/>
+    <item
+        android:id="@+id/patient_share"
+        android:title="Invite Other Patients"/>
+
+    <item
+        android:id="@+id/health_share"
+        android:title="Invite Health Care Providers"/>
+
+</menu>

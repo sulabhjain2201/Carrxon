@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_produts"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2" >
+
+ 
+
+      
+       
+
+        <RelativeLayout
+            android:id="@+id/wednesday_from_time_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="10dp"
+        android:layout_weight="1" 
+            android:background="@drawable/calender_bg"
+            android:paddingLeft="2dp"
+            android:paddingTop="2dp" >
+
+            <TextView
+                android:id="@+id/wednesday_from_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:text="09:00"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#606060" />
+
+            <ImageView
+                android:id="@+id/wednesday_from_time_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/drop_down_menu_arrow" />
+        </RelativeLayout>
+   
+
+
+ 
+      
+
+       
+
+        <RelativeLayout
+            android:id="@+id/wednesday_to_time_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+            android:background="@drawable/calender_bg"
+            android:paddingLeft="2dp"
+            android:paddingTop="2dp" >
+
+            <TextView
+                android:id="@+id/wednesday_to_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:text="17:00"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#606060" />
+
+            <ImageView
+                android:id="@+id/wednesday_to_time_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/drop_down_menu_arrow" />
+        </RelativeLayout>
+   
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+      android:background="@drawable/bg">
+        <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar">
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:textColor="#dedede"
+            android:text="WORK INJURY"/>
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+        android:layout_centerInParent="true" >
+
+        <Button
+            android:id="@+id/first_doctor_visit_btn"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="First Doctor's Visit For A New Work Related Injury"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_one">
+        </Button>
+         <Button
+            android:id="@+id/followup_visit_btn"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/first_doctor_visit_btn"
+            android:layout_centerInParent="true"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="I Have Been Treated For This Injury Before By Carrxon And This Is A Follow Up Visit"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_one">
+        </Button>
+         <Button
+            android:id="@+id/directed_to_carrxon_btn"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/followup_visit_btn"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+             android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_centerHorizontal="true"
+            android:text="I Have Been Treated For This Injury Before By Someone Other Than Carrxon But Have Been Directed To Carrxon For Followup Evalution."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_one">
+        </Button>
+    </RelativeLayout>
+
+</RelativeLayout>
